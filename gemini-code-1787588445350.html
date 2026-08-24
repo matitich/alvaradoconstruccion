@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>ALVARADO'S CONSTRUCCIÓN | Construcción, Remodelación y Portones</title>
+    <meta name="description" content="ALVARADO'S CONSTRUCCIÓN: soluciones en construcción, remodelación, portones, estructuras metálicas, cobertizos y seguridad para tu hogar. Cotiza por WhatsApp.">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="77a7641946e291a9b2e8f6a13562d6b9~tplv-tiktokx-cropcenter_1080_1080.jpeg" type="image/jpeg">
+
+    <!-- Open Graph para redes sociales -->
+    <meta property="og:title" content="ALVARADO'S CONSTRUCCIÓN | Soluciones a medida">
+    <meta property="og:description" content="Especialistas en construcción, remodelación y estructuras metálicas. Cotiza tu proyecto.">
+    <meta property="og:type" content="website">
+
+    <!-- Fuentes -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <style>
+        /* === VARIABLES & RESET === */
+        :root {
+            --primary-dark: #0f172a; 
+            --primary-blue: #1e1b4b; 
+            --accent-blue: #2563eb; 
+            --accent-hover: #1d4ed8;
+            --text-dark: #1f2937;
+            --text-gray: #4b5563;
+            --bg-light: #f8fafc;
+            --white: #ffffff;
+            --transition: all 0.3s ease;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            overflow-x: hidden; /* EVITAR SCROLL HORIZONTAL */
+            width: 100%;
+            font-family: 'Inter', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            scroll-behavior: smooth;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* === UTILIDADES === */
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-padding {
+            padding: 80px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-dark);
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-gray);
+            font-size: 1.1rem;
+            max-width: 600px;
+            margin: 0 auto 50px auto;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 14px 28px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .btn-primary {
+            background-color: var(--accent-blue);
+            color: var(--white);
+            box-shadow: 0 4px 6px -1px rgba(37, 99, 235, 0.2);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--accent-hover);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.3);
+            color: var(--white);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: var(--white);
+            border: 2px solid var(--white);
+        }
+
+        .btn-outline:hover {
+            background-color: var(--white);
+            color: var(--primary-dark);
+        }
+
+        /* === NAVBAR === */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            transition: var(--transition);
+        }
+
+        .navbar .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 80px;
+        }
+
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-img {
+            height: 60px;
+            width: auto;
+        }
+
+        .logo-text {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 800;
+            font-size: 1.2rem;
+            color: var(--primary-dark);
+            line-height: 1;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .logo-text span {
+            font-size: 0.9rem;
+            color: var(--accent-blue);
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-weight: 500;
+            color: var(--text-dark);
+            transition: var(--transition);
+            font-size: 0.95rem;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent-blue);
+        }
+
+        .nav-cta {
+            padding: 10px 20px;
+            font-size: 0.9rem;
+        }
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+            border: none;
+            background: none;
+            font-size: 1.5rem;
+            color: var(--primary-dark);
+        }
+
+        /* === HERO === */
+        .hero {
+            position: relative;
+            height: 100vh;
+            min-height: 600px;
+            display: flex;
+            align-items: center;
+            background-image: linear-gradient(rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.9)), url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2000&auto=format&fit=crop');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: var(--white);
+            padding-top: 80px;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 40px;
+            color: #e2e8f0;
+            line-height: 1.6;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        /* === BARRA DE CONFIANZA === */
+        .trust-bar {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            padding: 40px 0;
+        }
+
+        .trust-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 30px;
+            text-align: center;
+        }
+
+        .trust-item i {
+            font-size: 2rem;
+            color: var(--accent-blue);
+            margin-bottom: 15px;
+        }
+
+        .trust-item h4 {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        .trust-item p {
+            font-size: 0.9rem;
+            color: #cbd5e1;
+        }
+
+        /* === SERVICIOS === */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .service-card {
+            background: var(--white);
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+            transition: var(--transition);
+            border: 1px solid #e2e8f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+            border-color: var(--accent-blue);
+        }
+
+        .service-card.highlight {
+            border: 2px solid var(--accent-blue);
+            background: linear-gradient(to bottom, #ffffff, #f0f4ff);
+        }
+
+        .highlight-badge {
+            position: absolute;
+            top: 15px;
+            right: -30px;
+            background: var(--accent-blue);
+            color: white;
+            font-size: 0.7rem;
+            font-weight: bold;
+            padding: 5px 30px;
+            transform: rotate(45deg);
+        }
+
+        .service-icon {
+            font-size: 2.5rem;
+            color: var(--primary-blue);
+            margin-bottom: 20px;
+        }
+
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+            color: var(--primary-dark);
+        }
+
+        .service-card p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        /* === SECCIÓN SEGURIDAD === */
+        .security-banner {
+            background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-blue) 100%);
+            color: var(--white);
+            text-align: center;
+            border-radius: 16px;
+            padding: 60px 20px;
+            margin: 40px auto;
+            max-width: 1000px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+
+        .security-banner h2 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+
+        .security-banner p {
+            font-size: 1.1rem;
+            max-width: 700px;
+            margin: 0 auto 30px auto;
+            color: #e2e8f0;
+        }
+
+        /* === GALERÍA TIKTOK === */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 20px;
+            justify-items: center; /* Centrar los videos en la cuadrícula */
+        }
+        
+        /* Ajuste responsivo obligatorio para embeds de TikTok */
+        .tiktok-embed {
+            max-width: 100% !important;
+            min-width: 280px !important; /* Evitar que rompan el diseño en celulares muy pequeños */
+            margin: 0 auto !important;
+        }
+
+        /* === POR QUÉ ELEGIRNOS === */
+        .why-us-content {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            flex-wrap: wrap;
+        }
+
+        .why-us-img {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .why-us-img img {
+            border-radius: 16px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+
+        .why-us-list {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .why-us-list ul {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .why-us-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            font-size: 1.1rem;
+        }
+
+        .why-us-list i {
+            color: var(--accent-blue);
+            font-size: 1.5rem;
+            margin-top: 3px;
+        }
+
+        /* === PROCESO === */
+        .process-section {
+            background-color: var(--white);
+        }
+
+        .process-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .process-step {
+            text-align: center;
+            position: relative;
+        }
+
+        .step-number {
+            font-size: 4rem;
+            font-weight: 800;
+            color: rgba(37, 99, 235, 0.1);
+            font-family: 'Montserrat', sans-serif;
+            margin-bottom: -25px;
+        }
+
+        .process-step h4 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: var(--primary-dark);
+        }
+
+        .process-step p {
+            color: var(--text-gray);
+            font-size: 0.95rem;
+        }
+
+        /* === CTA FINAL === */
+        .final-cta {
+            background: var(--bg-light);
+            text-align: center;
+            padding: 100px 20px;
+            border-top: 1px solid #e2e8f0;
+        }
+
+        .final-cta h2 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: var(--primary-dark);
+        }
+
+        .final-cta p {
+            font-size: 1.2rem;
+            color: var(--text-gray);
+            margin-bottom: 40px;
+            max-width: 600px;
+            margin-inline: auto;
+        }
+
+        .final-cta .btn {
+            font-size: 1.2rem;
+            padding: 18px 40px;
+        }
+
+        /* === FOOTER & CONTACTO === */
+        .footer {
+            background-color: var(--primary-dark);
+            color: var(--white);
+            padding: 60px 0 20px 0;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 40px;
+        }
+
+        .footer-logo h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .footer-logo p {
+            color: #cbd5e1;
+        }
+
+        .footer-contact h4 {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+            color: var(--accent-blue);
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .footer-links a {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: #cbd5e1;
+            transition: var(--transition);
+        }
+
+        .footer-links a:hover {
+            color: var(--white);
+            transform: translateX(5px);
+        }
+
+        .footer-bottom {
+            text-align: center;
+            color: #94a3b8;
+            font-size: 0.9rem;
+        }
+
+        /* === WHATSAPP FLOTANTE === */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 35px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 100;
+            transition: var(--transition);
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            background-color: #128C7E;
+            color: white;
+        }
+
+        /* === ANIMACIONES === */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* === MEDIA QUERIES (MOBILE FIRST ENFOQUE) === */
+        @media (max-width: 992px) {
+            .hero h1 { font-size: 2.8rem; }
+            .section-title { font-size: 2.2rem; }
+            .security-banner { margin: 40px 20px; }
+        }
+
+        @media (max-width: 768px) {
+            .hamburger { display: block; }
+            
+            .nav-links {
+                position: absolute;
+                top: 80px;
+                left: -100%;
+                width: 100%;
+                background-color: var(--white);
+                flex-direction: column;
+                align-items: center;
+                padding: 30px 0;
+                box-shadow: 0 10px 10px rgba(0,0,0,0.05);
+                transition: 0.4s ease-in-out;
+            }
+
+            .nav-links.active {
+                left: 0;
+            }
+
+            .nav-links a {
+                font-size: 1.1rem;
+                padding: 10px;
+            }
+
+            .hero {
+                text-align: center;
+                background-position: right;
+            }
+
+            .hero h1 { font-size: 2.2rem; }
+            .hero-content { margin: 0 auto; }
+            .hero-buttons { justify-content: center; flex-direction: column; width: 100%; }
+            .hero-buttons .btn { width: 100%; }
+            
+            .trust-grid, .services-grid, .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr; /* Una columna para los videos en móvil */
+            }
+
+            .why-us-content {
+                flex-direction: column;
+            }
+
+            .final-cta h2 { font-size: 2.2rem; }
+            
+            .whatsapp-float {
+                bottom: 20px;
+                right: 20px;
+                width: 55px;
+                height: 55px;
+                font-size: 30px;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .logo-text { font-size: 1rem; }
+            .logo-text span { font-size: 0.75rem; }
+            .logo-img { height: 45px; }
+            .hero h1 { font-size: 1.8rem; }
+            .section-title { font-size: 1.8rem; }
+            .security-banner h2 { font-size: 1.8rem; }
+            .btn { font-size: 0.95rem; padding: 12px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo-container">
+                <img src="77a7641946e291a9b2e8f6a13562d6b9~tplv-tiktokx-cropcenter_1080_1080.jpeg" alt="Logo Alvarado's Construcción" class="logo-img">
+                <div class="logo-text">
+                    ALVARADO'S <span>CONSTRUCCIÓN</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links">
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+                <li>
+                    <a href="https://wa.me/56976760761?text=Hola,%20quiero%20consultar%20por%20un%20proyecto%20de%20construcci%C3%B3n/remodelaci%C3%B3n." target="_blank" class="btn btn-primary nav-cta">
+                        <i class="fab fa-whatsapp"></i> Cotizar
+                    </a>
+                </li>
+            </ul>
+
+            <button class="hamburger">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- HERO PRINCIPAL -->
+    <section id="inicio" class="hero">
+        <div class="container fade-in">
+            <div class="hero-content">
+                <h1>Construimos, Remodelamos y Protegemos Tus Espacios</h1>
+                <p>Soluciones en construcción, remodelación y estructuras metálicas hechas a la medida de cada proyecto. Calidad y compromiso en cada detalle.</p>
+                <div class="hero-buttons">
+                    <a href="https://wa.me/56976760761?text=Hola,%20quiero%20consultar%20por%20un%20proyecto%20de%20construcci%C3%B3n/remodelaci%C3%B3n." target="_blank" class="btn btn-primary">
+                        <i class="fab fa-whatsapp"></i> COTIZAR POR WHATSAPP
+                    </a>
+                    <a href="#servicios" class="btn btn-outline">
+                        VER NUESTROS SERVICIOS
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BARRA DE CONFIANZA -->
+    <section class="trust-bar">
+        <div class="container">
+            <div class="trust-grid">
+                <div class="trust-item fade-in">
+                    <i class="fas fa-drafting-compass"></i>
+                    <h4>TRABAJOS A MEDIDA</h4>
+                    <p>Diseñamos soluciones según las necesidades de cada cliente.</p>
+                </div>
+                <div class="trust-item fade-in" style="transition-delay: 0.1s;">
+                    <i class="fas fa-tools"></i>
+                    <h4>CALIDAD Y TERMINACIONES</h4>
+                    <p>Cuidamos tanto la estructura como los detalles finales.</p>
+                </div>
+                <div class="trust-item fade-in" style="transition-delay: 0.2s;">
+                    <i class="fas fa-shield-alt"></i>
+                    <h4>SEGURIDAD</h4>
+                    <p>Soluciones pensadas para proteger y mejorar tus espacios.</p>
+                </div>
+                <div class="trust-item fade-in" style="transition-delay: 0.3s;">
+                    <i class="fas fa-comments"></i>
+                    <h4>ATENCIÓN DIRECTA</h4>
+                    <p>Comunicación clara durante todo el proyecto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section id="servicios" class="section-padding">
+        <div class="container">
+            <h2 class="section-title fade-in">Soluciones para cada proyecto</h2>
+            <p class="section-subtitle fade-in">Trabajos profesionales en construcción y metalurgia adaptados a tus necesidades.</p>
+            
+            <div class="services-grid">
+                
+                <div class="service-card highlight fade-in">
+                    <div class="highlight-badge">DESTACADO</div>
+                    <i class="fas fa-shield-virus service-icon"></i>
+                    <h3>PORTONES ANTI-ENCERRONA</h3>
+                    <p>Diseño e instalación de portones rápidos y reforzados orientados a mejorar drásticamente la seguridad y protección de tu hogar ante vulnerabilidades.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <i class="fas fa-torii-gate service-icon"></i>
+                    <h3>PORTONES Y ESTRUCTURAS</h3>
+                    <p>Fabricación e instalación de portones automáticos o manuales y estructuras metálicas según las dimensiones y necesidades específicas del cliente.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <i class="fas fa-bath service-icon"></i>
+                    <h3>REMODELACIÓN DE BAÑOS</h3>
+                    <p>Renovación y transformación de baños, buscando mejorar funcionalidad, distribución, diseño moderno y excelencia en terminaciones.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <i class="fas fa-bed service-icon"></i>
+                    <h3>REMODELACIÓN DE HABITACIONES</h3>
+                    <p>Transformación de dormitorios y espacios interiores para darles una nueva imagen moderna y un mejor aprovechamiento del espacio.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <i class="fas fa-warehouse service-icon"></i>
+                    <h3>COBERTIZOS Y TECHUMBRES</h3>
+                    <p>Construcción de cobertizos resistentes y soluciones de techumbre para proteger vehículos, patios y mejorar tus espacios exteriores.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <i class="fas fa-building service-icon"></i>
+                    <h3>ESTRUCTURAS METÁLICAS</h3>
+                    <p>Fabricación e instalación de diversas estructuras metálicas de alta resistencia para distintos proyectos residenciales y comerciales.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <i class="fas fa-hard-hat service-icon"></i>
+                    <h3>TRABAJOS DE CONSTRUCCIÓN</h3>
+                    <p>Soluciones generales de construcción, albañilería, ampliaciones y mejoramiento de espacios interiores y exteriores.</p>
+                </div>
+
+                <div class="service-card fade-in">
+                    <i class="fas fa-lightbulb service-icon"></i>
+                    <h3>PROYECTOS PERSONALIZADOS</h3>
+                    <p>Si tienes una idea que no aparece en la lista, contáctanos. Evaluamos distintos tipos de trabajos de construcción, remodelación y estructuras.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN ESPECIAL SEGURIDAD -->
+    <section class="container fade-in">
+        <div class="security-banner">
+            <h2>MÁS SEGURIDAD PARA TU HOGAR</h2>
+            <p>Protege tu hogar con soluciones diseñadas para entregar mayor seguridad y tranquilidad. Fabricamos e instalamos portones anti-encerrona y estructuras adaptadas a las características de cada propiedad.</p>
+            <a href="https://wa.me/56976760761?text=Hola,%20quiero%20cotizar%20un%20port%C3%B3n%20anti-encerrona." target="_blank" class="btn btn-outline" style="font-size: 1.1rem; border-width: 2px;">
+                <i class="fas fa-shield-check"></i> QUIERO COTIZAR MI PORTÓN
+            </a>
+        </div>
+    </section>
+
+    <!-- GALERÍA / PROYECTOS (VIDEOS DE TIKTOK) -->
+    <section id="proyectos" class="section-padding">
+        <div class="container">
+            <h2 class="section-title fade-in">Trabajos que hablan por nosotros</h2>
+            <p class="section-subtitle fade-in">Revisa los resultados reales de nuestros proyectos directamente desde nuestro perfil.</p>
+            
+            <div class="gallery-grid fade-in">
+                <!-- Video Portón -->
+                <div>
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@alvarados_contruccion/video/7294275439206599942" data-video-id="7294275439206599942" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@alvarados_contruccion" href="https://www.tiktok.com/@alvarados_contruccion?refer=embed">@alvarados_contruccion</a> Nuevo serco terminado en Curanilahue <a title="construccion" target="_blank" href="https://www.tiktok.com/tag/construccion?refer=embed">#construccion</a> <a title="ideas" target="_blank" href="https://www.tiktok.com/tag/ideas?refer=embed">#ideas</a> <a title="parati" target="_blank" href="https://www.tiktok.com/tag/parati?refer=embed">#parati</a> <a title="curanilahue❤️" target="_blank" href="https://www.tiktok.com/tag/curanilahue%E2%9D%A4%EF%B8%8F?refer=embed">#curanilahue❤️</a> <a title="viral" target="_blank" href="https://www.tiktok.com/tag/viral?refer=embed">#viral</a> <a target="_blank" title="♬ Run Away - Ian Storm &#38; Ron van den Beuken &#38; Menno" href="https://www.tiktok.com/music/Run-Away-6870796632489723906?refer=embed">♬ Run Away - Ian Storm &#38; Ron van den Beuken &#38; Menno</a> </section> </blockquote> 
+                </div>
+
+                <!-- Video Baño -->
+                <div>
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@alvarados_contruccion/video/7677023773203123477" data-video-id="7677023773203123477" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@alvarados_contruccion" href="https://www.tiktok.com/@alvarados_contruccion?refer=embed">@alvarados_contruccion</a> Remodelación de baño <a title="construction" target="_blank" href="https://www.tiktok.com/tag/construction?refer=embed">#construction</a> <a title="remodelacion" target="_blank" href="https://www.tiktok.com/tag/remodelacion?refer=embed">#remodelacion</a> <a title="paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii" target="_blank" href="https://www.tiktok.com/tag/paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii?refer=embed">#paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</a> <a title="baños" target="_blank" href="https://www.tiktok.com/tag/ba%C3%B1os?refer=embed">#baños</a> <a title="bañosmodernos" target="_blank" href="https://www.tiktok.com/tag/ba%C3%B1osmodernos?refer=embed">#bañosmodernos</a> <a target="_blank" title="♬ Last Ember Haze - Chuckles the Chef" href="https://www.tiktok.com/music/Last-Ember-Haze-7656667045665392667?refer=embed">♬ Last Ember Haze - Chuckles the Chef</a> </section> </blockquote> 
+                </div>
+
+                <!-- Video Cobertizo -->
+                <div>
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@alvarados_contruccion/video/7626556305389391122" data-video-id="7626556305389391122" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@alvarados_contruccion" href="https://www.tiktok.com/@alvarados_contruccion?refer=embed">@alvarados_contruccion</a> Cobertizo en Curanilahue <a title="techo" target="_blank" href="https://www.tiktok.com/tag/techo?refer=embed">#techo</a> <a title="remodelacion" target="_blank" href="https://www.tiktok.com/tag/remodelacion?refer=embed">#remodelacion</a> <a title="construccion" target="_blank" href="https://www.tiktok.com/tag/construccion?refer=embed">#construccion</a> <a title="paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii" target="_blank" href="https://www.tiktok.com/tag/paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii?refer=embed">#paratiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</a> <a title="curanilahue" target="_blank" href="https://www.tiktok.com/tag/curanilahue?refer=embed">#Curanilahue</a> <a target="_blank" title="♬ Cancer - Jhonny Ovando" href="https://www.tiktok.com/music/Cancer-7378861857850739462?refer=embed">♬ Cancer - Jhonny Ovando</a> </section> </blockquote> 
+                </div>
+
+                <!-- Video Construcción general -->
+                <div>
+                    <blockquote class="tiktok-embed" cite="https://www.tiktok.com/@alvarados_contruccion/video/7647690756727229717" data-video-id="7647690756727229717" style="max-width: 605px;min-width: 325px;" > <section> <a target="_blank" title="@alvarados_contruccion" href="https://www.tiktok.com/@alvarados_contruccion?refer=embed">@alvarados_contruccion</a> Corredor en Estructura Metálica <a title="terrazas" target="_blank" href="https://www.tiktok.com/tag/terrazas?refer=embed">#terrazas</a> <a title="construccion" target="_blank" href="https://www.tiktok.com/tag/construccion?refer=embed">#construccion</a> <a title="remodelacion" target="_blank" href="https://www.tiktok.com/tag/remodelacion?refer=embed">#remodelacion</a> <a title="cabañas" target="_blank" href="https://www.tiktok.com/tag/caba%C3%B1as?refer=embed">#cabañas</a> <a title="puertoaysen" target="_blank" href="https://www.tiktok.com/tag/puertoaysen?refer=embed">#puertoaysen</a> <a target="_blank" title="♬ Ocean Lights - Honggil Groove" href="https://www.tiktok.com/music/Ocean-Lights-7643617160032307216?refer=embed">♬ Ocean Lights - Honggil Groove</a> </section> </blockquote> 
+                </div>
+            </div>
+            <!-- Script único de TikTok para cargar todos los videos simultáneamente -->
+            <script async src="https://www.tiktok.com/embed.js"></script>
+        </div>
+    </section>
+
+    <!-- NOSOTROS / POR QUÉ ELEGIRNOS -->
+    <section id="nosotros" class="section-padding bg-light">
+        <div class="container">
+            <h2 class="section-title fade-in">¿Por qué confiar en nosotros?</h2>
+            
+            <div class="why-us-content mt-5">
+                <div class="why-us-img fade-in">
+                    <img src="https://images.unsplash.com/photo-1541888086425-d81bb19240f5?q=80&w=800&auto=format&fit=crop" alt="Trabajador de construcción">
+                </div>
+                <div class="why-us-list fade-in">
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> <span><strong>Soluciones personalizadas</strong> adaptadas a tus espacios.</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span><strong>Atención directa</strong> y fluida desde el primer contacto.</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span><strong>Trabajo a medida</strong>, evaluando cada detalle del terreno o vivienda.</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span><strong>Compromiso</strong> inquebrantable con los plazos de cada proyecto.</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span><strong>Enfoque en seguridad</strong> residencial y comercial.</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span><strong>Terminaciones cuidadas</strong> que marcan la diferencia.</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span><strong>Construcción y remodelación</strong> integral en un mismo lugar.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROCESO DE TRABAJO -->
+    <section class="section-padding process-section">
+        <div class="container">
+            <h2 class="section-title fade-in">Cómo Trabajamos</h2>
+            <p class="section-subtitle fade-in">Un proceso transparente y directo para facilitar tu proyecto.</p>
+            
+            <div class="process-grid">
+                <div class="process-step fade-in">
+                    <div class="step-number">01</div>
+                    <h4>CUÉNTANOS TU IDEA</h4>
+                    <p>Contáctanos vía WhatsApp y explícanos qué necesitas construir o remodelar.</p>
+                </div>
+                <div class="process-step fade-in" style="transition-delay: 0.1s;">
+                    <div class="step-number">02</div>
+                    <h4>EVALUAMOS EL PROYECTO</h4>
+                    <p>Analizamos las necesidades, medidas y características técnicas del trabajo.</p>
+                </div>
+                <div class="process-step fade-in" style="transition-delay: 0.2s;">
+                    <div class="step-number">03</div>
+                    <h4>COTIZAMOS</h4>
+                    <p>Entregamos una propuesta clara y detallada según los requerimientos del proyecto.</p>
+                </div>
+                <div class="process-step fade-in" style="transition-delay: 0.3s;">
+                    <div class="step-number">04</div>
+                    <h4>MANOS A LA OBRA</h4>
+                    <p>Coordinamos fechas, comenzamos la ejecución y materializamos tu idea.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="final-cta fade-in">
+        <div class="container">
+            <h2>¿TIENES UN PROYECTO EN MENTE?</h2>
+            <p>Cuéntanos qué necesitas y conversemos sobre la mejor solución para tu espacio, ya sea una remodelación, un cobertizo o reforzar la seguridad de tu hogar.</p>
+            <a href="https://wa.me/56976760761?text=Hola,%20quiero%20consultar%20por%20un%20proyecto%20de%20construcci%C3%B3n/remodelaci%C3%B3n." target="_blank" class="btn btn-primary">
+                <i class="fab fa-whatsapp"></i> COTIZAR POR WHATSAPP
+            </a>
+        </div>
+    </section>
+
+    <!-- FOOTER & CONTACTO -->
+    <footer id="contacto" class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <h3>ALVARADO'S CONSTRUCCIÓN</h3>
+                    <p>Construcción, remodelación y soluciones a medida para tu hogar o negocio.</p>
+                </div>
+                
+                <div class="footer-contact">
+                    <h4>HABLEMOS DE TU PROYECTO</h4>
+                    <div class="footer-links">
+                        <a href="https://wa.me/56976760761" target="_blank">
+                            <i class="fab fa-whatsapp" style="font-size: 1.5rem; color: #25D366;"></i> 
+                            +56 9 7676 0761
+                        </a>
+                        <a href="https://www.tiktok.com/@alvarados_contruccion" target="_blank">
+                            <i class="fab fa-tiktok" style="font-size: 1.5rem; color: #fff;"></i> 
+                            @alvarados_contruccion
+                        </a>
+                        <a href="https://www.facebook.com/alvarado.s.construc" target="_blank">
+                            <i class="fab fa-facebook" style="font-size: 1.5rem; color: #1877F2;"></i> 
+                            Alvarado's Construcción
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 ALVARADO'S CONSTRUCCIÓN. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- BOTÓN WHATSAPP FLOTANTE -->
+    <a href="https://wa.me/56976760761?text=Hola,%20quiero%20consultar%20por%20un%20proyecto%20de%20construcci%C3%B3n/remodelaci%C3%B3n." class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- JAVASCRIPT -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Menú Móvil
+            const hamburger = document.querySelector('.hamburger');
+            const navLinks = document.querySelector('.nav-links');
+            const navItems = document.querySelectorAll('.nav-links a');
+
+            hamburger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                hamburger.innerHTML = navLinks.classList.contains('active') ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+            });
+
+            // Cerrar menú al hacer clic en un enlace (Móvil)
+            navItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    navLinks.classList.remove('active');
+                    hamburger.innerHTML = '<i class="fas fa-bars"></i>';
+                });
+            });
+
+            // Animaciones al hacer scroll (Fade-In)
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.15
+            };
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target); // Animar solo una vez
+                    }
+                });
+            }, observerOptions);
+
+            const fadeElements = document.querySelectorAll('.fade-in');
+            fadeElements.forEach(el => observer.observe(el));
+
+            // Sombra en el navbar al hacer scroll
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.style.boxShadow = '0 4px 20px rgba(0,0,0,0.1)';
+                } else {
+                    navbar.style.boxShadow = '0 2px 10px rgba(0,0,0,0.05)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
